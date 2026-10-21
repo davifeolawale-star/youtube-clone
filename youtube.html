@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>YouTube Clone</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,400,0,0" rel="stylesheet">
+  <link rel="stylesheet" href="styles/general.css">
+  <link rel="stylesheet" href="styles/header.css">
+  <link rel="stylesheet" href="styles/sidebar.css">
+  <link rel="stylesheet" href="styles/video.css">
+</head>
+<body>
+  <header class="header">
+    <div class="left-section">
+      <button class="icon-button" aria-label="Menu"><span class="material-symbols-outlined">menu</span></button>
+      <a class="youtube-logo" href="https://www.youtube.com/" aria-label="YouTube home">
+        <span class="youtube-play"><span class="material-symbols-outlined">play_arrow</span></span>
+        <span class="logo-word">YouTube</span><sup>NG</sup>
+      </a>
+    </div>
+    <div class="middle-section">
+      <form class="search-form" action="https://www.youtube.com/results" method="get">
+        <input class="search-bar" type="search" name="search_query" placeholder="Search" aria-label="Search">
+        <button class="search-button" aria-label="Search"><span class="material-symbols-outlined">search</span></button>
+      </form>
+      <button class="voice-button" aria-label="Search with your voice"><span class="material-symbols-outlined">mic</span></button>
+    </div>
+    <div class="right-section">
+      <a class="header-action" href="https://studio.youtube.com/" aria-label="Create"><span class="material-symbols-outlined">video_call</span></a>
+      <a class="header-action" href="https://www.youtube.com/" aria-label="YouTube apps"><span class="material-symbols-outlined">apps</span></a>
+      <a class="header-action notification" href="https://www.youtube.com/" aria-label="Notifications"><span class="material-symbols-outlined">notifications</span><span class="notification-count">3</span></a>
+      <a class="user-avatar" href="https://www.youtube.com/" aria-label="Your account">D</a>
+    </div>
+  </header>
+
+  <aside class="sidebar">
+    <a class="sidebar-link selected" href="https://www.youtube.com/"><span class="material-symbols-outlined">home</span><span>Home</span></a>
+    <a class="sidebar-link" href="https://www.youtube.com/shorts/"><span class="material-symbols-outlined">bolt</span><span>Shorts</span></a>
+    <a class="sidebar-link" href="https://www.youtube.com/feed/subscriptions"><span class="material-symbols-outlined">subscriptions</span><span>Subscriptions</span></a>
+    <div class="sidebar-divider"></div>
+    <a class="sidebar-link" href="https://www.youtube.com/feed/you"><span class="material-symbols-outlined">account_box</span><span>You</span></a>
+    <a class="sidebar-link" href="https://www.youtube.com/feed/history"><span class="material-symbols-outlined">history</span><span>History</span></a>
+    <a class="sidebar-link" href="https://www.youtube.com/playlist?list=WL"><span class="material-symbols-outlined">playlist_play</span><span>Playlists</span></a>
+    <a class="sidebar-link" href="https://www.youtube.com/@YouTubeMusic"><span class="material-symbols-outlined">music_note</span><span>YouTube Music</span></a>
+  </aside>
+
+  <main class="main-content">
+    <nav class="category-bar" aria-label="Video categories">
+      <a class="category-chip active" href="https://www.youtube.com/">All</a>
+      <a class="category-chip" href="https://www.youtube.com/results?search_query=music">Music</a>
+      <a class="category-chip" href="https://www.youtube.com/results?search_query=live">Live</a>
+      <a class="category-chip" href="https://www.youtube.com/results?search_query=programming">Programming</a>
+      <a class="category-chip" href="https://www.youtube.com/results?search_query=gaming">Gaming</a>
+      <a class="category-chip" href="https://www.youtube.com/results?search_query=podcasts">Podcasts</a>
+      <a class="category-chip" href="https://www.youtube.com/results?search_query=design">Design</a>
+      <a class="category-chip" href="https://www.youtube.com/results?search_query=recently+uploaded">Recently uploaded</a>
+    </nav>
+
+    <section class="video-grid" aria-label="Recommended videos">
+      <article class="video-preview">
+        <a class="thumbnail-row" href="https://www.youtube.com/watch?v=G3e-cpL7ofc">
+          <img class="thumbnail" src="https://i.ytimg.com/vi/G3e-cpL7ofc/hq720.jpg" alt="HTML and CSS full course thumbnail">
+          <span class="video-time">6:31:24</span>
+        </a>
+        <div class="video-info-grid">
+          <img class="profile-picture" src="https://i.ytimg.com/vi/G3e-cpL7ofc/default.jpg" alt="SuperSimpleDev channel">
+          <div class="video-info">
+            <a class="video-title" href="https://www.youtube.com/watch?v=G3e-cpL7ofc">HTML &amp; CSS Full Course - Beginner to Pro</a>
+            <p class="video-author">SuperSimpleDev <span class="verified">✓</span></p>
+            <p class="video-stats">19M views · 4 years ago</p>
+          </div>
+        </div>
+      </article>
+
+      <article class="video-preview">
+        <a class="thumbnail-row" href="https://www.youtube.com/watch?v=EerdGm-ehJQ">
+          <img class="thumbnail" src="https://i.ytimg.com/vi/EerdGm-ehJQ/hq720.jpg" alt="JavaScript course thumbnail">
+          <span class="video-time">22:15:57</span>
+        </a>
+        <div class="video-info-grid">
+          <img class="profile-picture" src="https://i.ytimg.com/vi/EerdGm-ehJQ/default.jpg" alt="SuperSimpleDev channel">
+          <div class="video-info">
+            <a class="video-title" href="https://www.youtube.com/watch?v=EerdGm-ehJQ">JavaScript Tutorial Full Course - Beginner to Pro</a>
+            <p class="video-author">SuperSimpleDev <span class="verified">✓</span></p>
+            <p class="video-stats">5.8M views · 2 years ago</p>
+          </div>
+        </div>
+      </article>
+
+      <article class="video-preview">
+        <a class="thumbnail-row" href="https://www.youtube.com/watch?v=rfscVS0vtbw">
+          <img class="thumbnail" src="https://i.ytimg.com/vi/rfscVS0vtbw/hq720.jpg" alt="Python programming tutorial thumbnail">
+          <span class="video-time">4:26:52</span>
+        </a>
+        <div class="video-info-grid">
+          <img class="profile-picture" src="https://i.ytimg.com/vi/rfscVS0vtbw/default.jpg" alt="freeCodeCamp channel">
+          <div class="video-info">
+            <a class="video-title" href="https://www.youtube.com/watch?v=rfscVS0vtbw">Learn Python - Full Course for Beginners</a>
+            <p class="video-author">freeCodeCamp.org <span class="verified">✓</span></p>
+            <p class="video-stats">43M views · 6 years ago</p>
+          </div>
+        </div>
+      </article>
+
+      <article class="video-preview">
+        <a class="thumbnail-row" href="https://www.youtube.com/watch?v=PkZNo7MFNFg">
+          <img class="thumbnail" src="https://i.ytimg.com/vi/PkZNo7MFNFg/hq720.jpg" alt="JavaScript beginner tutorial thumbnail">
+          <span class="video-time">3:26:43</span>
+        </a>
+        <div class="video-info-grid">
+          <img class="profile-picture" src="https://i.ytimg.com/vi/PkZNo7MFNFg/default.jpg" alt="freeCodeCamp channel">
+          <div class="video-info">
+            <a class="video-title" href="https://www.youtube.com/watch?v=PkZNo7MFNFg">Learn JavaScript - Full Course for Beginners</a>
+            <p class="video-author">freeCodeCamp.org <span class="verified">✓</span></p>
+            <p class="video-stats">18M views · 5 years ago</p>
+          </div>
+        </div>
+      </article>
+
+      <article class="video-preview">
+        <a class="thumbnail-row" href="https://www.youtube.com/watch?v=Ke90Tje7VS0">
+          <img class="thumbnail" src="https://i.ytimg.com/vi/Ke90Tje7VS0/hq720.jpg" alt="React tutorial thumbnail">
+          <span class="video-time">2:25:10</span>
+        </a>
+        <div class="video-info-grid">
+          <img class="profile-picture" src="https://i.ytimg.com/vi/Ke90Tje7VS0/default.jpg" alt="Programming channel">
+          <div class="video-info">
+            <a class="video-title" href="https://www.youtube.com/watch?v=Ke90Tje7VS0">React JS - Full Course for Beginners</a>
+            <p class="video-author">freeCodeCamp.org <span class="verified">✓</span></p>
+            <p class="video-stats">9.2M views · 5 years ago</p>
+          </div>
+        </div>
+      </article>
+
+      <article class="video-preview">
+        <a class="thumbnail-row" href="https://www.youtube.com/watch?v=HGTJBPNC-Gw">
+          <img class="thumbnail" src="https://i.ytimg.com/vi/HGTJBPNC-Gw/hq720.jpg" alt="HTML and CSS project tutorial thumbnail">
+          <span class="video-time">4:15:00</span>
+        </a>
+        <div class="video-info-grid">
+          <img class="profile-picture" src="https://i.ytimg.com/vi/HGTJBPNC-Gw/default.jpg" alt="Programming channel">
+          <div class="video-info">
+            <a class="video-title" href="https://www.youtube.com/watch?v=HGTJBPNC-Gw">HTML &amp; CSS Tutorial - Build a Website for Beginners</a>
+            <p class="video-author">Bro Code <span class="verified">✓</span></p>
+            <p class="video-stats">2.1M views · 2 years ago</p>
+          </div>
+        </div>
+      </article>
+    </section>
+  </main>
+</body>
+</html>
